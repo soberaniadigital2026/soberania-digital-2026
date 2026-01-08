@@ -1,61 +1,218 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2c3e50">
+<link rel="apple-touch-icon" href="icono-192.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#0d1117">
-
-    <title>Soberanía Digital 2026</title>
+    <title>Soberanía Digital 2026 | Tu Guía de Transición</title>
     <style>
-        body { background-color: #0d1117; color: #c9d1d9; font-family: 'Courier New', Courier, monospace; padding: 20px; max-width: 500px; margin: 0 auto; line-height: 1.5; }
-        .terminal { border: 1px solid #30363d; background: #161b22; padding: 20px; border-radius: 8px; box-shadow: 0 0 20px rgba(0,255,0,0.05); }
-        .glitch { color: #58a6ff; font-weight: bold; text-align: center; text-transform: uppercase; letter-spacing: 2px; }
-        .status-bar { background: #000; padding: 10px; border: 1px solid #238636; color: #39ff14; font-size: 0.8em; margin: 15px 0; }
-        .btn-exe { display: block; width: 100%; padding: 15px; margin: 10px 0; background: #238636; color: white; text-align: center; text-decoration: none; font-weight: bold; border-radius: 4px; border: none; font-family: 'Courier New', sans-serif; }
-        .btn-exe:active { background: #2ea043; transform: scale(0.98); }
-        .counter-section { margin-top: 30px; text-align: center; border-top: 1px solid #30363d; padding-top: 20px; }
-        #digit { font-size: 2.5em; color: #58a6ff; font-weight: bold; }
-        .info { font-size: 0.75em; color: #8b949e; margin-top: 10px; }
+.share-section {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #eef2f3;
+    border-radius: 8px;
+}
+.share-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+.btn-share {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s;
+}
+.btn-share:hover { transform: scale(1.05); }
+.bg-telegram { background: #0088cc; }
+.bg-whatsapp { background: #25d366; }
+.bg-copy { background: #7f8c8d; cursor: pointer; border: none; font-family: inherit; font-size: 1rem; }
+        :root {
+            --primary: #2c3e50;
+            --accent: #e74c3c;
+            --bg: #f4f7f6;
+            --text: #333;
+            --white: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: var(--primary);
+            color: var(--white);
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 2rem;
+        }
+        h1 { margin: 0; font-size: 2.5rem; }
+        .hero-text { font-size: 1.2rem; opacity: 0.9; }
+        
+        .card {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .step-number {
+            background: var(--accent);
+            color: white;
+            padding: 0.2rem 0.8rem;
+            border-radius: 50%;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        h2 { color: var(--primary); border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem; }
+        
+        .tool-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.7rem 1.2rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .tool-link:hover { background: #34495e; }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th { background: #eee; }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .highlight { color: var(--accent); font-weight: bold; }
     </style>
 </head>
 <body>
 
-    <div class="terminal">
-        <div class="glitch">🛡️ PROTOCOLO SD-2026</div>
-        <p style="font-size: 0.7em; text-align: center; color: #8b949e;">[ VERSIÓN 2.1 - ENTORNO SEGURO ]</p>
+<header>
+    <h1>#ApagonDigital2026</h1>
+    <p class="hero-text">Guía rápida para recuperar tu independencia de las Big Tech</p>
+</header>
+
+<div class="container">
+    <section class="card">
+        <h2>¿Por qué ahora?</h2>
+        <p>En 2026, la soberanía sobre tus datos es soberanía sobre tu vida. Cada búsqueda y cada ruta que registras alimenta un sistema de control externo. <strong>Es hora de volver a casa.</strong></p>
+        <table>
+            <tr>
+                <th>Antiguo Régimen (Control)</th>
+                <th>Nueva Era (Soberanía)</th>
+            </tr>
+            <tr>
+                <td>Rastreo 24/7 en Google Maps</td>
+                <td>Mapas Offline en Magic Earth</td>
+            </tr>
+            <tr>
+                <td>Perfilado psicológico en YouTube</td>
+                <td>Privacidad total en NewPipe</td>
+            </tr>
+            <tr>
+                <td>Datos en servidores de EE.UU.</td>
+                <td>Cifrado Suizo en Proton</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="card">
+        <h2><span class="step-number">1</span> Rescata tus datos</h2>
+        <p>Antes de irte, recupera lo tuyo. Entra en <strong>Google Takeout</strong> y descarga tus fotos, contactos y documentos.</p>
+        <p><em>Peso estimado:</em> Variable (en <strong>gramos</strong> digitales, unos 500 MB por cada año de uso intenso).</p>
+        <a href="https://takeout.google.com" class="tool-link" target="_blank">Ir a Takeout</a>
+    </section>
+
+    <section class="card">
+        <h2><span class="step-number">2</span> Tu nueva Embajada</h2>
+        <p>Crea una cuenta en <strong>Proton Mail</strong>. Es correo cifrado, con sede en Suiza, fuera de la jurisdicción de las Big Tech estadounidenses.</p>
+        <a href="https://proton.me" class="tool-link" target="_blank">Abrir cuenta Proton</a>
+    </section>
+
+    <section class="card">
+        <h2><span class="step-number">3</span> Navega sin espías</h2>
+        <p>Cambia tu buscador a <strong>Qwant</strong> y tus mapas a <strong>Magic Earth</strong>. Funcionan igual, pero sin vender tu ubicación a anunciantes.</p>
+        <a href="https://www.qwant.com" class="tool-link" target="_blank">Probar Qwant</a>
+    </section>
+
+    <section class="card">
+        <h2><span class="step-number">4</span> El golpe final</h2>
+        <p>Deshabilita las apps de Google en tu móvil y empieza a usar alternativas de código abierto como <strong>NewPipe</strong> para vídeos.</p>
+    </section>
+</div>
+
+<footer>
+   <section class="share-section">
+    <h3>📢 ¡Propaga la Soberanía!</h3>
+    <p>Comparte esta guía con 5 personas para romper el monopolio.</p>
+    <div class="share-buttons">
+        <a href="https://t.me/share/url?url=https://tusitio.com&text=He%20decidido%20recuperar%20mi%20soberan%C3%ADa%20digital.%20Mira%20esta%20gu%C3%ADa%20para%20el%20#ApagonDigital2026" 
+           class="btn-share bg-telegram" target="_blank">
+            Telegram
+        </a>
         
-        <div class="status-bar">
-            > NODO: GITHUB_SERVER (USA)<br>
-            > ALERTA: JURISDICCIÓN VULNERABLE<br>
-            > ACCIÓN: REPATRIACIÓN RECOMENDADA
-        </div>
+        <a href="https://api.whatsapp.com/send?text=He%20decidido%20recuperar%20mi%20soberan%C3%ADa%20digital.%20Mira%20esta%20gu%C3%ADa%20para%20el%20#ApagonDigital2026:%20https://tusitio.com" 
+           class="btn-share bg-whatsapp" target="_blank">
+            WhatsApp
+        </a>
 
-        <a href="https://proton.me/es" class="btn-exe">MIGRAR EMAIL (SWISS_SERVER)</a>
-        <a href="https://internxt.com/es" class="btn-exe">MIGRAR NUBE (EU_SERVER)</a>
-        <a href="https://www.qwant.com" class="btn-exe">BUSCADOR NEUTRAL (FR_SERVER)</a>
+        <button onclick="copyLink()" class="btn-share bg-copy">
+            Copiar Enlace
+        </button>
     </div>
+</section>
 
-    <div class="counter-section">
-        <div id="digit">37</div>
-        <div style="font-size: 0.8em; color: #58a6ff; letter-spacing: 3px;">CIUDADANOS PROTEGIDOS</div>
-        <p class="info">La soberanía no se pide, se ejerce.<br>Usa el menú del navegador para <b>Instalar App</b>.</p>
-    </div>
+<footer>
+    <p>Esta web no utiliza cookies ni rastreadores. <br>
+    <strong>Propaga el mensaje. Seamos soberanos.</strong></p>
+</footer>
 
-    <script>
-        // Simulador de actividad real para evitar el fallo de la API
-        let currentCount = 37;
-        const digitElement = document.getElementById('digit');
-        
-        setInterval(() => {
-            if (Math.random() > 0.85) {
-                currentCount++;
-                digitElement.innerText = currentCount;
-            }
-        }, 8000);
-    </script>
-
+<script>
+function copyLink() {
+    const url = window.location.href;
+    navigator.clipboard.writeText(url).then(() => {
+        alert("¡Enlace copiado! Pégalo en tus redes sociales.");
+    });
+}
+</script>
+</footer>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js').catch(err => console.log('Error:', err));
+    });
+  }
+</script>
 </body>
 </html>
